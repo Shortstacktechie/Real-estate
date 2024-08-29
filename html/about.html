@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/about.css">
+    <title>about us</title>
+</head>
+<body>
+    <nav style="position: sticky; top: 0;">
+        <div class="logo">
+            <img src="../images/Group 82.png" alt="logo">
+            <p>B.Furniture</p>
+        </div>
+        <div class="bx-menu">
+            <img src="../images/menu-regular-24.png" onclick="toggleDropdown()" id="myImage"  alt="">
+            
+            <div class="links" id="myDropdown">
+                <li><a href="../index.html"  onclick="LinkStyle(this)">Home</a></li>
+                <li><a href="#" onclick="LinkStyle(this)">About Us</a></li>
+                <li><a href="../html/gallery.html" onclick="LinkStyle(this)">Gallery</a></li>
+                <li><a href="#links" onclick="LinkStyle(this)">Contact us</a></li>
+            </div>
+        </div> 
+    </nav>
+    <div class="hero_space">
+        <div class="hero_space1">
+            <div class="hero_space2">
+                <div class="hero_space3">
+                    <p>About us</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="more_info">
+       <li><a href="#info_space"  onclick="LinkStyle(this)">Who We Are</a></li>
+       <li><a href="" onclick="LinkStyle(this)">Why Us</a></li>
+       <li><a href="#info_space" onclick="LinkStyle(this)">What We Do</a></li>
+       <li><a href="#links" onclick="LinkStyle(this)">Work With Us </a></li>
+    </div>
+    <div class="info-space">
+        <div class="info-space1" id="#info_space">
+            <p>
+                All of our luxury furniture is handcrafted using kiln-dried hardwood timbers. Our top quality, solid beech wood frames are guaranteed for 15 years for lasting assurance.
+            </p>
+            <p>
+                Dedicated to true British craftsmanship, we pride ourselves on having only the finest manufacturing practices, authentic materials and a steadfast commitment to quality. We continually strive to offer an impeccable service and a memorable buying experience.
+            </p>
+        </div>
+    </div>
+    <div class="info_jake">
+        <div class="image"><img src="../images/unsplash_06Bl5S7tySM.png" alt="jake's img"></div>
+        <div class="jake">
+            <p class="jake_p">About Jake</p>
+            <P>Jake founded B.Furniture out of a Vermont barn in 1977 and dedicated the rest of his life to craft. He was our founder, the soul of B.Furnitures, the one who gave us the sport we all love so much.</P>
+        </div>
+    </div>
+    <div class="team">
+        <div class="team_info">
+            <p class="team_head">Meet Our Team</p>
+            <p class="team_p">The B.Furniture work embodies the crafts life. Yes, they're world champions, innovators and leaders, but they're also the perfect ambassadors for all things B.Furniture. Providing crucial feedback on all our products while traveling the globe, they're our experts at making the most out of every day.</p>
+        </div>
+        <div class="team_img">
+            <div>
+                <img src="../images/unsplash_8Q0wJ8bqeAE.png" alt="team member1">
+                <p class="team_imgp1">Matthew Jeo</p>
+                <p class="team_imgp2">Brand Manager</p>
+            </div>
+            <div>
+                <img src="../images/unsplash_F0q2f4OAJaw.png" alt="team member2">
+                <p class="team_imgp1">Rachael Kate</p>
+                <p class="team_imgp2">Brand Strategist</p>
+            </div>
+            <div>
+                <img src="../images/unsplash_v6771a4avV4.png" alt="team member3">
+                <p class="team_imgp1">John Chu</p>
+                <p class="team_imgp2">Designer</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer" id="links">
+        <div class="footer1">
+            <p><a href="#info_space" class="footer_p">OUR COMPANY</a></li>
+            <li><a href="./about.html">ABOUT US</a></li>
+            <li><a href="#links">CONTACT US</a></li>
+            <li><a href="../html/gallery.html">VISIT OUR SHOWROOM</a></li>
+            <li><a href="./gallery.html">TESTIMONIAL</a></li>
+            <li><a href="#">TERMS AND CONDITION</a></li>
+            <li><a href="#">PRIVACY POLICY</a></li>
+        </div>
+        <div class="footer2">
+            <p><a href="#info_space" class="footer_p">CUSTOMER SERVICE</a></p>
+            <li><a href="#links">BOOK AN APPOINTMENT</a></li>
+            <li><a href="#links">FAQS</a></li>
+            <li><a href="#">SIMPLE REQUEST</a></li>
+            <li><a href="./gallery.html">INTERIOR DESIGN SERVICE</a></li>
+        </div>
+        <div class="footer3">
+            <P class="footer_p">SIGN UP FOR OUR NEWSLETTER</P>
+            <div class="footer31">
+                <input type="email" name="email" placeholder="Email address">
+                 <a href=""><img src="../images/back.png" alt=""></a>
+            </div>
+            <p class="Footer3_p">FOLLOW US</p>
+             <div class="footer32">
+                <a href=""><img src="../images/facebook.png" alt=""></a>
+                <a href=""><img src="../images/twitter.png" alt=""></a>
+                <a href=""><img src="../images/instagram.png" alt=""></a>
+             </div>
+        </div>
+    </div>
+    <script>
+        function LinkStyle(clickedLink) {
+           const links = document.querySelectorAll('a');
+           links.forEach(link => link.classList.remove('clicked'));
+           clickedLink.classList.add('clicked');
+       }
+       function toggleDropdown() {
+           document.getElementById("myDropdown").classList.toggle("show");
+       }
+       function LinkStyle(clickedLink) {
+           const more_info = document.querySelectorAll('a');
+           more_info.forEach(link => link.classList.remove('clicked'));
+           clickedLink.classList.add('clicked');
+       }
+   </script>
+</body>
+</html>
+
